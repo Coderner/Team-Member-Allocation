@@ -2,6 +2,7 @@ import { useState} from "react";
 import './App.css';
 import Employees from './Employees';
 import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   const [selectedTeam,setTeam] = useState("TeamB");
@@ -116,6 +117,7 @@ function App() {
         handleTeamSelectionChange={handleTeamSelectionChange}
         handleEmployeeCardClick={handleEmployeeCardClick}
       />
+      <Footer/>
     </div>
   );
 }
