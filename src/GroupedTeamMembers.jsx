@@ -43,7 +43,7 @@ const GroupedTeamMembers = ({employees, selectedTeam, setTeam}) =>{
                                 Team Name : {item.team}
                             </h4>
                             <div id={"collapse_"+ item.team}
-                                 className={item.collapsed===true?"collapsed":""}>
+                                 className={item.collapsed===true?"collapse":""}>
                                  <hr/>
                                  {
                                     item.members.map(member=>{
