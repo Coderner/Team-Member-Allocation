@@ -1,5 +1,6 @@
 import { useState, useEffect} from "react";
 import './App.css';
+import Navbar from './Navbar';
 import Employees from './Employees';
 import Header from './Header';
 import Footer from './Footer';
@@ -117,6 +118,7 @@ function App() {
   }
   return (
       <Router>
+         <Navbar/>
          <Header
             selectedTeam={selectedTeam}
             teamMemberCount={employees.filter((employee)=>(employee.teamName===selectedTeam)).length}
