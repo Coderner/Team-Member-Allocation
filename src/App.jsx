@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Employees from './Employees';
 import Header from './Header';
 import Footer from './Footer';
+import NotFound from './NotFound';
 import GroupedTeamMembers from "./GroupedTeamMembers";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
@@ -136,7 +137,8 @@ function App() {
             <Route path="/groupedTeamMembers" element={
                        <GroupedTeamMembers/>
             }>
-
+            </Route>
+            <Route path="*" element={<NotFound/>}>
             </Route>
          </Routes>
          <Footer/> 
